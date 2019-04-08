@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "Tradestore"
-s.version      = "0.1.3"
+s.version      = "0.1.4"
 s.summary      = "Firestore trade framework"
 s.description  = <<-DESC
 Tradestore is a library for Cloud Firestore's EC business.

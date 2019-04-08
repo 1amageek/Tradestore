@@ -24,9 +24,9 @@ public protocol AddressProtocol {
 
 public struct Balance: Codable & Equatable {
 
-    public private(set) var pending: [String: Int] = [:]
+    public var pending: [String: Int] = [:]
 
-    public private(set) var available: [String: Int] = [:]
+    public var available: [String: Int] = [:]
 }
 
 public protocol AccountProtocol {

@@ -20,7 +20,7 @@ public protocol AddressProtocol {
 
 }
 
-public protocol TransactionResult {
+public protocol TransactionResultProtocol {
 
 }
 

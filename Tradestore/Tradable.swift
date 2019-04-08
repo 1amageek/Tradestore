@@ -22,7 +22,7 @@ public protocol AddressProtocol {
 
 // MARK: - Account
 
-public struct Balance: Codable {
+public struct Balance: Codable & Equatable {
 
     public private(set) var pending: [String: Int] = [:]
 
@@ -126,7 +126,7 @@ public enum StockValue: String, Codable {
     case outOfStock = "out_of_stock"
 }
 
-public struct Inventory: Codable {
+public struct Inventory: Codable & Equatable {
 
     public var type: StockType
     public var value: StockValue?

@@ -20,6 +20,10 @@ public protocol AddressProtocol {
 
 }
 
+public protocol TransactionResult {
+
+}
+
 // MARK: - Account
 
 public struct Balance: Codable & Equatable {

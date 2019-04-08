@@ -152,9 +152,6 @@ public protocol InventoryStockProtocol {
 }
 
 public protocol SKUProtocol {
-    associatedtype Person: UserProtocol
-    associatedtype Product: ProductProtocol
-    associatedtype InventoryStock: InventoryStockProtocol
     var selledBy: String { get set }
     var createdBy: String { get set }
     var currency: Currency { get set }

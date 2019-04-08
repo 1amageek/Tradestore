@@ -10,6 +10,7 @@
 		1238E9742256EAD2000C31A2 /* Tradestore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1238E9722256EAD2000C31A2 /* Tradestore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1238E97C2256EB1C000C31A2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238E97A2256EB1C000C31A2 /* Currency.swift */; };
 		1238E97D2256EB1C000C31A2 /* Tradable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238E97B2256EB1C000C31A2 /* Tradable.swift */; };
+		1272808B225B1829006C59AF /* Tradestore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1272808A225B1828006C59AF /* Tradestore.podspec */; };
 		395642AA2B9CE6427B85C920 /* Pods_Tradestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9A8C1E16936AE18DE807B9 /* Pods_Tradestore.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,7 @@
 		1238E9732256EAD2000C31A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1238E97A2256EB1C000C31A2 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		1238E97B2256EB1C000C31A2 /* Tradable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tradable.swift; sourceTree = "<group>"; };
+		1272808A225B1828006C59AF /* Tradestore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tradestore.podspec; sourceTree = "<group>"; };
 		214F3FE65181EEE843379796 /* Pods-Tradestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradestore.release.xcconfig"; path = "Target Support Files/Pods-Tradestore/Pods-Tradestore.release.xcconfig"; sourceTree = "<group>"; };
 		B5BA15839F0190364B84B032 /* Pods-Tradestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradestore.debug.xcconfig"; path = "Target Support Files/Pods-Tradestore/Pods-Tradestore.debug.xcconfig"; sourceTree = "<group>"; };
 		BB9A8C1E16936AE18DE807B9 /* Pods_Tradestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tradestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +41,7 @@
 		1238E9652256EAD2000C31A2 = {
 			isa = PBXGroup;
 			children = (
+				1272808A225B1828006C59AF /* Tradestore.podspec */,
 				1238E9712256EAD2000C31A2 /* Tradestore */,
 				1238E9702256EAD2000C31A2 /* Products */,
 				7BB4E73DD6764D0B3BFCBD4E /* Pods */,
@@ -71,7 +74,6 @@
 				B5BA15839F0190364B84B032 /* Pods-Tradestore.debug.xcconfig */,
 				214F3FE65181EEE843379796 /* Pods-Tradestore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1272808B225B1829006C59AF /* Tradestore.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

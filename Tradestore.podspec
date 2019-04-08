@@ -5,7 +5,6 @@ s.name         = "Tradestore"
 s.version      = "0.1.0"
 s.summary      = "Firestore trade framework"
 s.description  = <<-DESC
-s.swift_version = "5.0"
 Tradestore is a library for Cloud Firestore's EC business.
 DESC
 s.homepage     = "https://github.com/1amageek/Tradestore"

@@ -32,9 +32,9 @@ public struct Balance: Codable & Equatable {
 
     public var available: [String: Int] = [:]
 
-    init() { }
+    public init() { }
 
-    init(pending: [String: Int], available: [String: Int]) {
+    public init(pending: [String: Int], available: [String: Int]) {
         self.init()
         self.pending = pending
         self.available = available

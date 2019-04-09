@@ -31,6 +31,14 @@ public struct Balance: Codable & Equatable {
     public var pending: [String: Int] = [:]
 
     public var available: [String: Int] = [:]
+
+    init() { }
+
+    init(pending: [String: Int], available: [String: Int]) {
+        self.init()
+        self.pending = pending
+        self.available = available
+    }
 }
 
 public protocol AccountProtocol {

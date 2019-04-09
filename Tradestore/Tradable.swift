@@ -54,11 +54,12 @@ public enum PayoutStatus: String, Codable {
 }
 
 public protocol PayoutProtocol {
+    associatedtype TransactionResultType: TransactionResultProtocol
     var currency: Currency { get set }
     var amount: Int { get set }
     var account: String { get set }
     var status: PayoutStatus { get set }
-    var transactionResults: [Any] { get set }
+    var transactionResults: [TransactionResultType] { get set }
     var isCancelled: Bool { get set }
 }
 
@@ -97,6 +98,7 @@ public enum BalanceTransactionType: String, Codable {
 }
 
 public protocol BalanceTransactionProtocol {
+    associatedtype TransactionResultType: TransactionResultProtocol
     var type: BalanceTransactionType { get set }
     var currency: Currency { get set }
     var amount: Int { get set }
@@ -105,7 +107,7 @@ public protocol BalanceTransactionProtocol {
     var order: String { get set }
     var transfer: String { get set }
     var payout: String { get set }
-    var transactionResults: [Any] { get set }
+    var transactionResults: [TransactionResultType] { get set }
 }
 
 // MARK: - Product
@@ -222,6 +224,7 @@ public protocol OrderItemProtocol {
 public protocol OrderProtocol {
     associatedtype AddressType: AddressProtocol
     associatedtype OrderItemType: OrderItemProtocol
+    associatedtype TransactionResultType: TransactionResultProtocol
     var title: String? { get set }
     var assets: [File] { get set }
     var parentID: String? { get set }
@@ -236,7 +239,7 @@ public protocol OrderProtocol {
     var items: [OrderItemType] { get set }
     var paymentStatus: OrderPaymentStatus { get set }
     var transferStatus: OrderTransferStatus { get set }
-    var transactionResults: [String: Any] { get set }
+    var transactionResults: [TransactionResultType] { get set }
     var isCancelled: Bool { get set }
 }
 

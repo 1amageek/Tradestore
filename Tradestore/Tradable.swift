@@ -208,7 +208,6 @@ public enum OrderPaymentStatus: String, Codable {
 public protocol OrderItemProtocol {
     var name: String? { get set }
     var thumbnailImage: File? { get set }
-    var order: String { get set }
     var purchasedBy: String { get set }
     var createdBy: String { get set }
     var selledBy: String { get set }

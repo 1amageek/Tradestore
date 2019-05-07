@@ -28,13 +28,13 @@ public protocol TransactionResultProtocol {
 
 public struct Balance: Codable & Equatable {
 
-    public var pending: [String: Int] = [:]
+    public var pending: [Currency: Int] = [:]
 
-    public var available: [String: Int] = [:]
+    public var available: [Currency: Int] = [:]
 
     public init() { }
 
-    public init(pending: [String: Int], available: [String: Int]) {
+    public init(pending: [Currency: Int], available: [Currency: Int]) {
         self.init()
         self.pending = pending
         self.available = available
@@ -46,6 +46,7 @@ public protocol AccountProtocol {
     var isRejected: Bool { get set }
     var isSigned: Bool { get set }
     var balance: Balance { get set }
+    var accountInformation: [String: Any] { get set }
 }
 
 public enum PayoutStatus: String, Codable {
@@ -87,10 +88,10 @@ public protocol TradeTransactionProtocol: Codable {
     var selledBy: String { get set }
     var purchasedBy: String { get set }
     var order: String { get set }
-    var product: DocumentReference? { get set }
-    var sku: String { get set }
-    var inventoryStock: String? { get set }
-    var item: DocumentReference? { get set }
+    var productReference: DocumentReference? { get set }
+    var skuRefernece: DocumentReference { get set }
+    var stockReference: DocumentReference? { get set }
+    var itemReference: DocumentReference { get set }
 }
 
 // MARK: - BalanceTransaction
@@ -112,9 +113,9 @@ public protocol BalanceTransactionProtocol {
     var amount: Int { get set }
     var from: String { get set }
     var to: String { get set }
-    var order: String { get set }
-    var transfer: String { get set }
-    var payout: String { get set }
+    var orderReference: DocumentReference? { get set }
+    var transferReference: DocumentReference? { get set }
+    var payoutReference: DocumentReference? { get set }
     var transactionResults: [TransactionResultType] { get set }
 }
 
@@ -160,20 +161,19 @@ public struct Inventory: Codable & Equatable {
 
 // MARK: - SKU
 
-public protocol InventoryStockProtocol {
+public protocol StockProtocol {
     var isAvailabled: Bool { get set }
-    var SKU: String { get set }
+    var order: String? { get set }
+    var itemReference: DocumentReference? { get set }
 }
 
 public protocol SKUProtocol {
     var selledBy: String { get set }
     var createdBy: String { get set }
     var currency: Currency { get set }
-    var product: DocumentReference? { get set }
+    var productReference: DocumentReference? { get set }
     var amount: Int { get set }
-    var unitSales: Int { get set }
     var inventory: Inventory { get set }
-    var isPublished: Bool { get set }
     var isAvailabled: Bool { get set }
     var numberOfFetch: Int { get set }
 }
@@ -220,8 +220,8 @@ public protocol OrderItemProtocol {
     var createdBy: String { get set }
     var selledBy: String { get set }
     var type: OrderItemType { get set }
-    var product: DocumentReference? { get set }
-    var sku: String { get set }
+    var productReference: DocumentReference? { get set }
+    var skuReference: DocumentReference? { get set }
     var quantity: Int { get set }
     var currency: Currency { get set }
     var amount: Int { get set }
@@ -232,15 +232,14 @@ public protocol OrderProtocol {
     associatedtype AddressType: AddressProtocol
     associatedtype OrderItemType: OrderItemProtocol
     associatedtype TransactionResultType: TransactionResultProtocol
-    var title: String? { get set }
-    var assets: [File] { get set }
     var parentID: String? { get set }
     var purchasedBy: String { get set }
     var selledBy: String { get set }
     var shippingTo: AddressType? { get set }
-    var transferredTo: Set<String> { get set }
+    var transferredTo: [DocumentReference] { get set }
     var paidAt: Timestamp? { get set }
-    var expirationDate: Timestamp { get set }
+    var cancelableDate: Timestamp? { get set }
+    var expirationDate: Timestamp? { get set }
     var currency: Currency { get set }
     var amount: Int { get set }
     var items: [OrderItemType] { get set }
@@ -255,8 +254,9 @@ public protocol OrderProtocol {
 public protocol ItemProtocol {
     var selledBy: String { get set }
     var order: String { get set }
-    var product: DocumentReference? { get set }
-    var sku: String { get set }
+    var productReference: DocumentReference? { get set }
+    var skuReferenceku: DocumentReference { get set }
+    var stockReference: DocumentReference? { get set }
     var isCancelled: Bool { get set }
 }
 

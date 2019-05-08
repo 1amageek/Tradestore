@@ -87,7 +87,7 @@ public protocol TradeTransactionProtocol: Codable {
     var type: TradeTransactionType { get set }
     var selledBy: String { get set }
     var purchasedBy: String { get set }
-    var order: String { get set }
+    var orderReference: DocumentReference { get set }
     var productReference: DocumentReference? { get set }
     var skuRefernece: DocumentReference { get set }
     var stockReference: DocumentReference? { get set }
@@ -163,7 +163,7 @@ public struct Inventory: Codable & Equatable {
 
 public protocol StockProtocol {
     var isAvailabled: Bool { get set }
-    var order: String? { get set }
+    var orderReference: DocumentReference? { get set }
     var itemReference: DocumentReference? { get set }
 }
 
@@ -253,7 +253,7 @@ public protocol OrderProtocol {
 
 public protocol ItemProtocol {
     var selledBy: String { get set }
-    var order: String { get set }
+    var orderReference: DocumentReference { get set }
     var productReference: DocumentReference? { get set }
     var skuReferenceku: DocumentReference { get set }
     var stockReference: DocumentReference? { get set }

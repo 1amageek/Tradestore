@@ -1,4 +1,4 @@
 target 'Tradestore' do
   use_frameworks!
-  pod 'Ballcap'
+  pod 'Firebase/Firestore'
 end

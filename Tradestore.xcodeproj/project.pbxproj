@@ -9,8 +9,18 @@
 /* Begin PBXBuildFile section */
 		1238E9742256EAD2000C31A2 /* Tradestore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1238E9722256EAD2000C31A2 /* Tradestore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1238E97C2256EB1C000C31A2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238E97A2256EB1C000C31A2 /* Currency.swift */; };
-		1238E97D2256EB1C000C31A2 /* Tradable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238E97B2256EB1C000C31A2 /* Tradable.swift */; };
 		1272808B225B1829006C59AF /* Tradestore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1272808A225B1828006C59AF /* Tradestore.podspec */; };
+		12D0C01A22830171006FB18F /* AccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C01922830171006FB18F /* AccountProtocol.swift */; };
+		12D0C01C228301E4006FB18F /* AddressProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C01B228301E4006FB18F /* AddressProtocol.swift */; };
+		12D0C01E2283020E006FB18F /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C01D2283020E006FB18F /* UserProtocol.swift */; };
+		12D0C02022830231006FB18F /* TransactionResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C01F22830231006FB18F /* TransactionResultProtocol.swift */; };
+		12D0C02222830259006FB18F /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C02122830259006FB18F /* Balance.swift */; };
+		12D0C0242283027C006FB18F /* PayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C0232283027C006FB18F /* PayoutProtocol.swift */; };
+		12D0C026228302A2006FB18F /* TradeTransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C025228302A2006FB18F /* TradeTransactionProtocol.swift */; };
+		12D0C028228302B8006FB18F /* BalanceTransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C027228302B8006FB18F /* BalanceTransactionProtocol.swift */; };
+		12D0C02A228302FD006FB18F /* SKUProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C029228302FD006FB18F /* SKUProtocol.swift */; };
+		12D0C02C22830337006FB18F /* OrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C02B22830337006FB18F /* OrderProtocol.swift */; };
+		12D0C02E22830361006FB18F /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0C02D22830361006FB18F /* ItemProtocol.swift */; };
 		395642AA2B9CE6427B85C920 /* Pods_Tradestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9A8C1E16936AE18DE807B9 /* Pods_Tradestore.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,8 +29,18 @@
 		1238E9722256EAD2000C31A2 /* Tradestore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tradestore.h; sourceTree = "<group>"; };
 		1238E9732256EAD2000C31A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1238E97A2256EB1C000C31A2 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
-		1238E97B2256EB1C000C31A2 /* Tradable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tradable.swift; sourceTree = "<group>"; };
 		1272808A225B1828006C59AF /* Tradestore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tradestore.podspec; sourceTree = "<group>"; };
+		12D0C01922830171006FB18F /* AccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProtocol.swift; sourceTree = "<group>"; };
+		12D0C01B228301E4006FB18F /* AddressProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressProtocol.swift; sourceTree = "<group>"; };
+		12D0C01D2283020E006FB18F /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
+		12D0C01F22830231006FB18F /* TransactionResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResultProtocol.swift; sourceTree = "<group>"; };
+		12D0C02122830259006FB18F /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		12D0C0232283027C006FB18F /* PayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoutProtocol.swift; sourceTree = "<group>"; };
+		12D0C025228302A2006FB18F /* TradeTransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeTransactionProtocol.swift; sourceTree = "<group>"; };
+		12D0C027228302B8006FB18F /* BalanceTransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTransactionProtocol.swift; sourceTree = "<group>"; };
+		12D0C029228302FD006FB18F /* SKUProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUProtocol.swift; sourceTree = "<group>"; };
+		12D0C02B22830337006FB18F /* OrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProtocol.swift; sourceTree = "<group>"; };
+		12D0C02D22830361006FB18F /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
 		214F3FE65181EEE843379796 /* Pods-Tradestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradestore.release.xcconfig"; path = "Target Support Files/Pods-Tradestore/Pods-Tradestore.release.xcconfig"; sourceTree = "<group>"; };
 		B5BA15839F0190364B84B032 /* Pods-Tradestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradestore.debug.xcconfig"; path = "Target Support Files/Pods-Tradestore/Pods-Tradestore.debug.xcconfig"; sourceTree = "<group>"; };
 		BB9A8C1E16936AE18DE807B9 /* Pods_Tradestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tradestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +81,17 @@
 			isa = PBXGroup;
 			children = (
 				1238E9722256EAD2000C31A2 /* Tradestore.h */,
-				1238E97B2256EB1C000C31A2 /* Tradable.swift */,
+				12D0C029228302FD006FB18F /* SKUProtocol.swift */,
+				12D0C02D22830361006FB18F /* ItemProtocol.swift */,
+				12D0C02B22830337006FB18F /* OrderProtocol.swift */,
+				12D0C025228302A2006FB18F /* TradeTransactionProtocol.swift */,
+				12D0C027228302B8006FB18F /* BalanceTransactionProtocol.swift */,
+				12D0C02122830259006FB18F /* Balance.swift */,
+				12D0C0232283027C006FB18F /* PayoutProtocol.swift */,
+				12D0C01D2283020E006FB18F /* UserProtocol.swift */,
+				12D0C01F22830231006FB18F /* TransactionResultProtocol.swift */,
+				12D0C01B228301E4006FB18F /* AddressProtocol.swift */,
+				12D0C01922830171006FB18F /* AccountProtocol.swift */,
 				1238E97A2256EB1C000C31A2 /* Currency.swift */,
 				1238E9732256EAD2000C31A2 /* Info.plist */,
 			);
@@ -190,7 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1238E97D2256EB1C000C31A2 /* Tradable.swift in Sources */,
+				12D0C02A228302FD006FB18F /* SKUProtocol.swift in Sources */,
+				12D0C01C228301E4006FB18F /* AddressProtocol.swift in Sources */,
+				12D0C028228302B8006FB18F /* BalanceTransactionProtocol.swift in Sources */,
+				12D0C01A22830171006FB18F /* AccountProtocol.swift in Sources */,
+				12D0C0242283027C006FB18F /* PayoutProtocol.swift in Sources */,
+				12D0C02022830231006FB18F /* TransactionResultProtocol.swift in Sources */,
+				12D0C01E2283020E006FB18F /* UserProtocol.swift in Sources */,
+				12D0C02C22830337006FB18F /* OrderProtocol.swift in Sources */,
+				12D0C02222830259006FB18F /* Balance.swift in Sources */,
+				12D0C02E22830361006FB18F /* ItemProtocol.swift in Sources */,
+				12D0C026228302A2006FB18F /* TradeTransactionProtocol.swift in Sources */,
 				1238E97C2256EB1C000C31A2 /* Currency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

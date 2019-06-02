@@ -12,7 +12,7 @@ public protocol ItemProtocol {
     var selledBy: String { get set }
     var orderReference: DocumentReference! { get set }
     var productReference: DocumentReference? { get set }
-    var skuReferenceku: DocumentReference! { get set }
+    var skuReference: DocumentReference! { get set }
     var stockReference: DocumentReference? { get set }
     var isCancelled: Bool { get set }
 }

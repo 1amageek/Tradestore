@@ -8,19 +8,19 @@
 
 import FirebaseFirestore
 
-public enum StockType: String, Codable {
+public enum StockType: String, Codable, Equatable {
     case finite     = "finite"
     case bucket     = "bucket"
     case infinite   = "infinite"
 }
 
-public enum StockValue: String, Codable {
+public enum StockValue: String, Codable, Equatable {
     case inStock    = "in_stock"
     case limited    = "limited"
     case outOfStock = "out_of_stock"
 }
 
-public struct Inventory: Codable & Equatable {
+public struct Inventory: Codable, Equatable {
 
     public var type: StockType
     public var value: StockValue?

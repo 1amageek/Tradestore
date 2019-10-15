@@ -8,7 +8,7 @@
 
 import FirebaseFirestore
 
-public struct Balance: Codable & Equatable {
+public struct Balance: Codable, Equatable {
 
     public var pending: [Currency: Int] = [:]
 

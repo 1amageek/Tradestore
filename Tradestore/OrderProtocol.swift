@@ -8,21 +8,21 @@
 
 import FirebaseFirestore
 
-public enum OrderItemType: String, Codable {
+public enum OrderItemType: String, Codable, Equatable {
     case sku        = "sku"
     case tax        = "tax"
     case shipping   = "shipping"
     case discount   = "discount"
 }
 
-public enum OrderItemStatus: String, Codable  {
+public enum OrderItemStatus: String, Codable, Equatable  {
     case none = "none"
     case ordered = "ordered"
     case changed = "changed"
     case canceled = "canceld"
 }
 
-public enum OrderTransferStatus: String, Codable {
+public enum OrderTransferStatus: String, Codable, Equatable {
     case none = "none"
     case rejected = "rejected"
     case transferred = "transferred"
@@ -31,7 +31,7 @@ public enum OrderTransferStatus: String, Codable {
     case cancelFailure = "cancel_failure"
 }
 
-public enum OrderPaymentStatus: String, Codable {
+public enum OrderPaymentStatus: String, Codable, Equatable {
     case none = "none"
     case rejected = "rejected"
     case authorized = "authorized"

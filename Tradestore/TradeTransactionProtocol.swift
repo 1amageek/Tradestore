@@ -8,7 +8,7 @@
 
 import FirebaseFirestore
 
-public enum TradeTransactionType: String, Codable {
+public enum TradeTransactionType: String, Codable, Equatable {
     case unknown = "unknown"
     case order = "order"
     case orderChange = "order_change"

@@ -8,7 +8,7 @@
 
 import FirebaseFirestore
 
-public enum BalanceTransactionType: String, Codable {
+public enum BalanceTransactionType: String, Codable, Equatable {
     case unknown = "unknown"
     case payment = "payment"
     case paymentRefund = "payment_refund"

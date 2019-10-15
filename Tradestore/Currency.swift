@@ -18,7 +18,7 @@ import Foundation
  - Brazilian Stripe accounts (currently in Preview) can only charge in Brazilian Real
  - Mexican Stripe accounts (currently in Preview) can only charge in Mexican Peso
  */
-public enum Currency: String, Codable {
+public enum Currency: String, Codable, Equatable {
 
     case AFN = "afn" // Afghan Afghani, AFN*
     case ALL = "all" // Albanian Lek, ALL

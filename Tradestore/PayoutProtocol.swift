@@ -8,7 +8,7 @@
 
 import FirebaseFirestore
 
-public enum PayoutStatus: String, Codable {
+public enum PayoutStatus: String, Codable, Equatable {
 
     case none = "none"
 

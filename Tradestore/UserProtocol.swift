@@ -9,6 +9,6 @@
 import FirebaseFirestore
 
 public protocol UserProtocol {
-    var isAvailabled: Bool { get set }
+    var isAvailable: Bool { get set }
     var country: String { get set }
 }

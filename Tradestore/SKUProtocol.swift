@@ -40,7 +40,7 @@ public struct Inventory: Codable, Equatable {
 
 
 public protocol StockProtocol {
-    var isAvailabled: Bool { get set }
+    var isAvailable: Bool { get set }
     var orderReference: DocumentReference? { get set }
     var itemReference: DocumentReference? { get set }
 }
@@ -52,6 +52,6 @@ public protocol SKUProtocol {
     var productReference: DocumentReference? { get set }
     var amount: Int { get set }
     var inventory: Inventory { get set }
-    var isAvailabled: Bool { get set }
+    var isAvailable: Bool { get set }
     var numberOfFetch: Int { get set }
 }
